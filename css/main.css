@@ -1843,7 +1843,7 @@ button {
 .map-section {
   height: 100vh;
   min-height: 25rem;
-  background: url("../../img/map.png") center center/cover;
+  background: url("../img/map.png") center center/cover;
 }
 
 .footer {
@@ -2033,12 +2033,12 @@ button {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    row-gap: 5%;
+    row-gap: 6%;
   }
 }
 @media screen and (max-width: 600px) {
   .slider__item {
-    row-gap: 3%;
+    row-gap: 4%;
   }
 }
 
@@ -2252,8 +2252,8 @@ button {
 
 .slider__arrows {
   position: absolute;
-  top: 52%;
-  right: -1%;
+  top: 27rem;
+  right: -0.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2264,14 +2264,14 @@ button {
 }
 @media screen and (max-width: 999px) {
   .slider__arrows {
-    top: 24%;
+    top: 14rem;
     right: 23%;
     width: 62%;
   }
 }
 @media screen and (max-width: 600px) {
   .slider__arrows {
-    top: 26%;
+    top: 11rem;
     right: 1%;
     width: 98%;
   }
@@ -2636,6 +2636,16 @@ button {
 .team__item:nth-child(3) .team__content {
   padding: 0 19%;
 }
+@media screen and (max-width: 999px) {
+  .team__item:nth-child(3) .team__content {
+    padding: 0 27%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .team__item:nth-child(3) .team__content {
+    padding: 0 20%;
+  }
+}
 
 .team__img-wrapper {
   width: 12.2222222222rem;
@@ -2698,6 +2708,12 @@ button {
 @media screen and (max-width: 999px) {
   .team__content {
     position: static;
+    padding: 0 27%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .team__content {
+    padding: 0 20%;
   }
 }
 
