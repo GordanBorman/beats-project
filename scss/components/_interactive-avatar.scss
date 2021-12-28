@@ -1,0 +1,49 @@
+
+
+.interactive-avatar {
+  height: rem(75px);
+  width: rem(75px);
+  /*border: rem(6px) solid #F8FAF9;*/
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  margin-right: rem(5px);
+
+  @include tablets {
+    margin-right: rem(4px);
+  }  
+
+  @include phones {
+    height: rem(64px);
+    width: rem(64px);
+    margin-right: rem(10px);
+  }
+
+&--active {
+  height: rem(74px);
+  width: rem(74px);
+  border: rem(6px) solid #E01F3D;
+
+  @include phones {
+    height: rem(63px);
+    width: rem(63px);
+  }
+} 
+
+}
+
+.interactive-avatar__link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+}
+
+.interactive-avatar__img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}

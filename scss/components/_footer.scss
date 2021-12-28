@@ -1,0 +1,30 @@
+.footer {
+  min-height: rem(107px);
+}
+
+.footer-container {
+  max-width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include phones {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.footer__address {
+  font-family: $font2;
+  font-size: rem(21px);
+  color: #000;
+  font-style: normal;
+}
+
+.footer__phone-number {
+
+  @include phones {
+    justify-content: center;
+  }
+}
+

@@ -1,0 +1,16 @@
+.modal-form {
+  display: none;
+}
+
+.modal-form-container {
+  width: rem(309px);
+  height: rem(176px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-form__text {
+  margin-bottom: rem(18px);
+}

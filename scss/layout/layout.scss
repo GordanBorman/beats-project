@@ -1,0 +1,90 @@
+html {
+  font-size: $baseFontSize;
+
+  @include phones {
+    font-size: 3.8vmin;
+  }
+}
+
+body, html {
+  height: 100%;
+}
+
+body {
+  font-family: "Alegreya Sans", Helvetica, sans-serif;
+  line-height: 1.42;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font: grayscale;
+  position: relative;
+  color: #666;
+}
+
+.wraper {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  width: 95%;
+  max-width: $containerWidth;
+  position: relative;
+  padding: rem(10px);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  li {
+  list-style: none;
+  }
+}
+
+footer {
+  position: relative;
+  width: 100%;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+

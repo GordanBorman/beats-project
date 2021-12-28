@@ -1,0 +1,139 @@
+.hero {
+  background-color: $grey;
+  height: 100vh;
+  min-height: 450px;
+  position: relative;
+  color: #292929;
+}
+
+.decor-grey-rectangle {
+  width: rem(46px);
+  height: rem(10px);
+  background-color: #C4C4C4;
+  position: absolute;
+  transform: rotate(-45deg);
+  bottom: 0;
+  right: 5%;
+
+  @include tablets {
+    right: 8%;
+  }
+}
+
+.hero__container {
+  background: url("../img/headphones.png") right 5% top 40% no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: rem(24px) 0 rem(55px);
+  text-align: center;
+
+  @include tablets {
+    background: none;
+    align-items: center;
+  }
+
+  @include phones {
+    justify-content: start;
+  }
+}
+
+.hero__title-section {
+  max-width: 39%;
+  font-family: $font2;
+
+  @include tablets {
+    max-width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    padding: 0 1% 14vmax;
+
+    &::before {
+      content: "";
+      width: rem(323px);
+      height: rem(323px);
+      background: url("../img/headphones-768.png") center top 20% / contain no-repeat;
+      margin-bottom: 6.5vmax;
+    }
+  }
+
+  @include phones {
+    max-width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    padding: 0 1% 15vmax;
+    
+    &::before {
+      content: "";
+      width: rem(320px);
+      height: rem(320px);
+      background: url("../img/headphones-480.png") center top 25% / contain no-repeat;
+      margin-bottom: 6.5vmax;
+    }
+  }
+}
+
+.hero__main-title {
+  font-size: rem(48px);
+  line-height: 1.1;
+  font-weight: bold;
+  margin-bottom: rem(21px);
+  text-transform: uppercase;
+  text-align: start;
+
+  @include tablets {
+    text-align: center;
+    margin-bottom: rem(5px);
+    padding: 0 5%;
+  }
+
+  @include phones {
+    text-align: center;
+    margin-bottom: rem(15px);
+    padding: 0 10%;
+    font-size: rem(32px);
+  }
+}
+
+.hero__title-desc {
+  font-size: rem(21px);
+  margin-bottom: rem(33px);
+  font-family: $font1;
+  padding-right: 12%;
+  line-height: 1.25;
+  text-align: start;
+
+  @include tablets {
+    padding: 0 23%;
+    margin-bottom: rem(22px);
+    text-align: center;
+  }
+
+  @include phones {
+    padding: 0 12%;
+    font-size: rem(18px);
+    font-family: $font2;
+    line-height: 1.0;
+    margin-bottom: rem(28px);
+  }
+}
+
+.hero__icons-section {
+  @include tablets {
+    display: none;
+  }
+}
+
+
+
+
+

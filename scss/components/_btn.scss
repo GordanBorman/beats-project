@@ -1,0 +1,65 @@
+.btn {
+  display: block;
+  font-size: rem(19px);
+  font-weight: bold;
+  text-decoration: none;
+  padding: rem(19px) rem(40px);
+  text-transform: uppercase;
+  border-radius: rem(100px);
+  line-height: 1;
+  border: rem(1px) solid #E01F3D;
+
+  @include tablets {
+    padding: rem(21px) rem(40px);
+  }
+  
+  &--submit {
+    background: #E01F3D;
+    font-family: Play, Helvetica, sans-serif;
+    font-size: rem(16px);
+    max-width: rem(163px);
+    color: white;
+    transition: background 0.3s;
+
+    @include phones {
+      margin-right: 0;
+      font-size: rem(19px);
+      margin-left: 3px;
+      text-align: center;
+      padding: rem(19px) rem(42px) rem(19px) rem(37px);
+    }
+    
+    &:hover {
+      color: #E01F3D;
+      background: white;
+      border: rem(1px) solid #E01F3D ;
+      transition: background 0.3s;
+    }
+  }
+
+  &--form {
+    @include phones {
+    font-size: rem(16px);
+    margin-left: 0;
+    }
+  }
+
+  &--reset {
+    background: transparent;
+    color: #000;
+    border: rem(1px) solid transparent;
+    font-size: rem(16px);
+    font-family: $font2;
+    color: #fff;
+    padding-left: rem(10px);
+
+    @include tablets {
+      padding-left: rem(20px);
+    }
+
+    &:hover {
+      color: #E01F3D;
+    }
+  }
+}
+

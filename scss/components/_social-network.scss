@@ -1,0 +1,51 @@
+.social-network {
+  margin-right: -3%;
+
+  @include phones {
+    margin-right: 15%;
+    display: flex;
+    justify-content: center;
+  }
+} 
+
+.social-network__list {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: rem(10px);
+
+  @include phones {
+    margin-left: rem(45px);
+  }
+}
+
+.social-network__item {
+  margin-right: 11px;
+}
+
+.social-network__item:last-child {
+  margin-right: 0;
+}
+
+
+
+.social-network__link {
+  display: block;
+  text-decoration: none;
+}
+
+.social-network__icon {
+  width: rem(30px);
+  height: rem(30px);
+}
+
+.social-network__icon-svg {
+  width: 100%;
+  height: 100%;
+  color: #b3b3b3;
+
+  &:hover {
+    color: black;
+    transition: color 0.3s;
+  }
+}

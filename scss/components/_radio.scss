@@ -1,0 +1,71 @@
+.radio {
+  display: flex;
+  cursor: pointer;
+  user-select: none;
+  margin-right: rem(23px);
+  margin-bottom: rem(17px);
+
+  @include tablets {
+    margin-right: rem(23px);
+    margin-bottom: rem(23px);
+  }
+
+  @include phones {
+    margin-right: rem(16px);
+  }
+
+  &--checkbox {
+    .radio__visible {
+      border-radius: 5px;
+
+      &::before {
+        background: url('../img/red-bird.svg') no-repeat center center;
+      }
+    }
+
+    @include phones {
+      margin-right: 0;
+    }
+  }
+}
+
+.radio__elem {
+  display: none;
+
+  &:checked ~ .radio__visible {
+    &::before {
+      display: block;
+    }
+  }
+}
+
+.radio__visible {
+  width: rem(25px);
+  height: rem(25px);
+  position: relative;
+  border-radius: 50%;
+  background: white;
+  margin-right: rem(10px);
+
+  &::before {
+    content: "";
+    width: rem(14px);
+    height: rem(14px);
+    background: #E01F3D;
+    border-radius: 50%;
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include tablets {
+      width: rem(13px);
+      height: rem(13px);
+    }
+  }
+}
+
+.radio__title {
+  color: #fff;
+}

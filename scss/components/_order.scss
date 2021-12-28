@@ -1,0 +1,79 @@
+.order-section {
+  background: url('../img/cta.png') center bottom / cover;
+  height: 100vh;
+  min-height: rem(450px);
+  position: relative;
+}
+
+.order-container {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0.5% 0 0;
+
+  @include phones {
+    padding: 0;
+    width: 98%;
+  }
+}
+
+.decor-pentagon-wraper {
+  position: absolute;
+  top: -4%;
+  right: 2%;
+  z-index: 100;
+  transform: rotate(-15deg);
+
+  @include tablets {
+    right: 7%;
+  }
+
+  @include phones {
+    right: 6%;
+  }
+}
+
+.decor-pentagon {
+  height: rem(50px);
+  width: rem(55px);
+  position: relative;
+
+  &--triangle {
+    width: rem(53px);
+    border: rem(18px)  solid;
+    border-top: 0;
+    border-right: rem(27px) solid;
+    border-left: rem(27px) solid;
+    border-color: transparent transparent red transparent;
+    position: absolute;
+    bottom: rem(26px);
+    left: rem(-1px);
+    z-index: 100;
+  }
+    
+  &--trapezoid {
+    height: rem(00px);
+    width: rem(53px);
+    border-top: rem(27px) solid red;
+    border-left: rem(15px) solid transparent;
+    border-right: rem(15px) solid transparent;
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+.order-section-title {
+  color: #fff;
+  margin-bottom: rem(48px);
+
+  @include tablets {
+    margin-bottom: rem(20px);
+  }
+
+  @include phones {
+    font-size: rem(32px);
+    margin-bottom: rem(30px);
+  }
+}
